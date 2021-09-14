@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    background-color: #F8F9F9
+}
+
+footer {
+    background-color: #4ca2cd;
+    color: #fff;
+}
+
+body img {
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    color: #4ca2cd;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+t {
+    color: #566573;
+    font-family: 'Roboto';
+    text-align: justify;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0px 12px 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    width: 150px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+li a:hover {
+    color: #2E4053;
+}
+
+.menu {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 20px 0px 20px 0px;
+    background: #4ca2cd;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #38ef7d);
+    background: linear-gradient(to right, #4ca2cd, #38ef7d);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.logo-container {
+    max-width: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.nav {
+    width: 100%;
+    max-width: 75%;
+    text-transform: capitalize;
+}
+
+.button,
+input[type=submit] {
+    color: white;
+    text-align: center;
+    max-width: fit-content;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 20px;
+    background: #4ca2cd;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:hover,
+input[type=submit]:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 6px 6px 24px;
+}
+
+input[type=text],
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #566573;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #4ca2cd;
+}
+
+.formulario {
+    border-radius: 5px;
+    width: 460px;
+    padding: 10px 20px 10px 20px;
+    color: #566573;
+}
+
+.convenios {
+    background-color: #D1F2EB;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+.convenios img {
+    max-width: 160px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row-25 {
+    width: 100%;
+    max-width: 25%;
+    margin: auto;
+}
+
+.row-33 {
+    width: 100%;
+    max-width: 33%;
+    margin: auto;
+}
+
+.row-50 {
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.row-66 {
+    width: 100%;
+    max-width: 66%;
+    margin: auto;
+}
+
+.row-100,
+.row {
+    width: 100%;
+    max-width: 99%;
+    margin: auto;
+    padding-top: 20px
+}
+
+.element-left {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 20px 0px 20px 0px;
+}
+
+.element-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.element-right {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px 0px 20px 0px;
+}
+
+i.fab,
+i.fas {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-row {
+    background-color: #D1F2EB;
+    border-radius: 10px;
+    margin: 10px;
+    color: #566573;
+}

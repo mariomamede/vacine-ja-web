@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <script src="./scripts/main.js"></script>
+    <title>Vacine Já</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="menu">
+        <div class="logo-container">
+            <a href="#">
+                <img src="./images/logo.png" style="width: 50%;" />
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./index.html">Vacine Já</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#calendario">Calendário</a></li>
+                <li><a href="#convenio">Convênios</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="height: 200px"></div>
+    <!-- Proteja sua família -->
+    <div class="container">
+        <div class="row-33">
+            <div class="element-center">
+                <img src="./images/vacine-se.png" />
+            </div>
+        </div>
+        <div class="row-66">
+            <div class="element-center">
+                <h1>Proteja sua família</h1>
+            </div>
+            <div class="element-center">
+                <t style="padding-left: 40px;text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh mauris, ultrices at leo sit amet, laoreet feugiat metus. Fusce fermentum scelerisque leo. Ut consequat sed lectus a sollicitudin. Suspendisse vitae velit sit amet tellus congue luctus.
+                    Mauris sollicitudin orci enim, sed aliquet nunc lacinia nec. Quisque id metus quis ipsum fringilla tincidunt et eget elit. Donec finibus erat eget elit vehicula, id varius quam condimentum. Donec venenatis, enim in hendrerit aliquam,
+                    enim urna consectetur turpis, a blandit erat tellus vitae nisi. Sed euismod accumsan mi, quis elementum diam.
+                </t>
+            </div>
+            <div class="button" style="margin-left: 40px;">Saiba Mais</div>
+        </div>
+    </div>
+    <!-- Agendamento -->
+    <div style="height: 100px" id="agendamento"></div>
+    <div style="background-color: #D1F2EB;padding: 40px 0px;">
+        <div class="container">
+            <div class="row-100">
+                <div class="element-center">
+                    <h1>Agende sua vacinação</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row-50">
+                <div class="element-left">
+                    <img src="./images/vacina.png" />
+                </div>
+            </div>
+            <div class="row-50">
+                <div class="element-center">
+                    <div class="formulario">
+                        <form action="mailto:contato@vacineja.com" method="post" enctype="text/plain">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="Nome" placeholder="Mario Mamede">
+
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="date" id="nascimento" name="Data de Nascimento" placeholder="10/10/1996">
+
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="Telefone" placeholder="(85) 99999999" maxlength="15">
+
+                            <label for="local">Local da vacinação</label>
+                            <select id="local" name="local">
+                                <option value="aldeota" style="color: gray;">Escolha uma opção</option>
+                                <option value="aldeota">Aldeota</option>
+                                <option value="papicu">Papicu</option>
+                                <option value="edson-queiroz">Edson Queiroz</option>
+                            </select>
+
+                            <label for="vacina">Vacina</label>
+                            <select id="vacina" name="vacina">
+                                <option value="aldeota" style="color: gray;">Escolha uma opção</option>
+                                <option value="aldeota">Gripe</option>
+                                <option value="papicu">Febre amarela</option>
+                                <option value="edson-queiroz">COVID-19</option>
+                            </select>
+                            <input type="submit" value="Cadastrar" onclick="cadastrar()" style="margin-top:20px">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Calendário de Vacinação -->
+    <div style="height: 100px" id="calendario"></div>
+    <div class="container">
+        <div class="row-66">
+            <div class="element-left">
+                <h1>Calendário de Vacinação</h1>
+            </div>
+            <div class="element-center">
+                <t style="padding-right: 80px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh mauris, ultrices at leo sit amet, laoreet feugiat metus. Fusce fermentum scelerisque leo. Ut consequat sed lectus a sollicitudin. Suspendisse vitae velit sit amet tellus congue luctus.
+                    Mauris sollicitudin orci enim, sed aliquet nunc lacinia nec. Quisque id metus quis ipsum fringilla tincidunt et eget elit. Donec finibus erat eget elit vehicula, id varius quam condimentum.
+                </t>
+            </div>
+            <div class="button">Ver Calendário</div>
+        </div>
+        <div class="row-33">
+            <div class="element-center">
+                <img src="./images/calendario.png" />
+            </div>
+        </div>
+    </div>
+    <!-- Convênios -->
+    <div style="height: 100px" id="convenio"></div>
+    <div class="convenios">
+        <div class="row-100">
+            <div class="element-center">
+                <h1>Convênios</h1>
+            </div>
+            <div class=" element-center convenios">
+                <img src="./images/convenios/bradesco-saude.png" />
+                <img src="./images/convenios/cassi-azul.png" />
+                <img src="./images/convenios/unimed.png" />
+                <img src="./images/convenios/hapvida.png" />
+                <img src="./images/convenios/samp-assistencia-medica.png" />
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container" style="padding: 40px 0px">
+        <div class="row-33" style="margin-top: -30px">
+            <a href="#">
+                <div class="element-center">
+                    <img src="./images/logo-vertical.png" style="width: 50%">
+                </div>
+            </a>
+            <div class="container">
+                <div class="row-33">
+                    <i class="fab fa-facebook" style="justify-content: right"></i>
+                </div>
+                <div class="row-33">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="row-33">
+                    <i class="fab fa-youtube" style="justify-content: left;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row-33">
+            <h2 style="text-align: center;">Mapa do Site</h2>
+            <div class="element-center" style="text-align: center">
+                <table>
+                    <tr>
+                        <td><a href="#convenios">Convênios</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#calendario">Calendário</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#agendamento">Agendamento</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#contato">Contato</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row-33">
+            <h2 style="text-align: center;">Fale conosco</h2>
+            <div class="element-center" style="text-align: center;">
+                <table>
+                    <tr>
+                        <td style="display: flex;"><i class="fab fa-whatsapp" style="padding-right: 5px;"></i>(85) 99999.9999
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; padding-top: 10px"><i class="fas fa-phone-alt" style="padding-right: 5px;"></i> (85) 3333.3333
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#2E4053;margin-bottom:-20px;">
+        <div class=" container">
+            <div class="element-center row-100" style=" padding: 10px 0px">
+                <t style=" color:white;font-size: 16px;">Vacine Já | Desenvolvido por <a href="https://github.com/mariomamede" style="color:#4ca2cd">Mario Mamede</a></t>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
